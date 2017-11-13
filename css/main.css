@@ -1,5 +1,5 @@
 * {
-  font-family: sans;
+  font-family: 'Comfortaa', sans-serif;
   text-align: center;
   /*color: #426b53;*/
   color: #2d592d;
@@ -18,17 +18,18 @@ h1 {
 }
 
 .lone-pine {
+  margin: 10px;
   font-size: 200%;
   text-shadow: 2px 2px #000;
 }
 
 video {
   width: 1000px;
-  margin: 60px;
+  margin: 10px;
 }
 
 .icon {
-  margin: auto;
+  margin: 10px auto;
   width: 64px;
   height: 64px;
   background-image: url("/img/lone-pine.png");
