@@ -1,0 +1,36 @@
+* {
+  font-family: sans;
+  text-align: center;
+  /*color: #426b53;*/
+  color: #2d592d;
+  font-variant: small-caps;
+  font-weight: 500;
+}
+
+body {
+  background-color: #111;
+}
+
+h1 {
+  font-size: 700%;
+  text-shadow: 4px 4px #000;
+  margin: 10px;
+}
+
+.lone-pine {
+  font-size: 200%;
+  text-shadow: 2px 2px #000;
+}
+
+video {
+  width: 1000px;
+  margin: 60px;
+}
+
+.icon {
+  margin: auto;
+  width: 64px;
+  height: 64px;
+  background-image: url("/img/lone-pine.png");
+  background-repeat: no-repeat;
+}
