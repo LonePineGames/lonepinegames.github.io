@@ -17,6 +17,18 @@ h1 {
   margin: 10px;
 }
 
+h2 {
+  font-size: 600%;
+  text-shadow: 4px 4px #000;
+  margin: 10px;
+}
+
+h3 {
+  font-size: 500%;
+  text-shadow: 4px 4px #000;
+  margin: 10px;
+}
+
 .lone-pine {
   margin: 10px;
   font-size: 200%;
