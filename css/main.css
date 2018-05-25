@@ -11,19 +11,32 @@ body {
   background-color: #111;
 }
 
+.headline {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 64px;
+  margin-bottom: 64px;
+  width: 50%;
+}
+
 h1 {
+  font-size: 700%;
+  text-shadow: 4px 4px #000;
+}
+
+h2 {
   font-size: 700%;
   text-shadow: 4px 4px #000;
   margin: 10px;
 }
 
-h2 {
+h3 {
   font-size: 600%;
   text-shadow: 4px 4px #000;
   margin: 10px;
 }
 
-h3 {
+h4 {
   font-size: 500%;
   text-shadow: 4px 4px #000;
   margin: 10px;
@@ -47,3 +60,52 @@ video {
   background-image: url("/img/lone-pine.png");
   background-repeat: no-repeat;
 }
+
+.atomized-link {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 64px;
+  margin-top: 64px;
+  width: 80%;
+  font-size: 0;
+}
+.atomized-link img {
+  width: 100%;
+}
+
+.new-cities-link {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 64px;
+  margin-top: 64px;
+  width: 80%;
+  cursor: pointer;
+}
+.new-cities-link img {
+  width: 100%;
+}
+
+.new-cities-link-label {
+  position: absolute;
+  bottom: 0px;
+  right: 16px;
+  color: white;
+  font-size: 700%;
+  text-shadow: 4px 4px #000;
+}
+
+.new-cities {
+  display: none;
+}
+
+.back-to-index {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  font-size: 200%;
+  cursor: pointer;
+  text-shadow: 4px 4px #000;
+}
+
