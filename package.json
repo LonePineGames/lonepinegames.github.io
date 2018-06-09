@@ -1,0 +1,23 @@
+{
+  "name": "lonepine.io",
+  "version": "1.0.0",
+  "description": "Website for Lone Pine Games",
+  "main": "index.js",
+  "dependencies": {
+    "serve": "^8.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LonePineGames/lonepinegames.github.io.git"
+  },
+  "author": "Conor Sullivan <conorwsullivan@gmail.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/LonePineGames/lonepinegames.github.io/issues"
+  },
+  "homepage": "https://github.com/LonePineGames/lonepinegames.github.io#readme"
+}
