@@ -123,3 +123,31 @@ video {
   margin-top: 150px;
 }
 
+.social-media-links {
+}
+
+.social-media-links a {
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  margin: 16px;
+}
+
+.social-media-links .twitter {
+  background-image: url("/img/twitter.png");
+}
+
+.social-media-links .reddit {
+  background-image: url("/img/reddit.png");
+}
+
+.social-media-links .mail {
+  background-image: url("/img/mail.png");
+}
+
+.social-media-links .conor {
+  background-image: url("/img/conor.png");
+}
+
+
