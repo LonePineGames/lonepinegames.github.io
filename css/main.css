@@ -8,15 +8,18 @@
 }
 
 body {
-  background-color: #111;
+  background-color: #101010;
+  image-rendering: pixelated;
+  margin: 0px;
 }
 
 .headline {
-  margin-right: auto;
-  margin-left: auto;
   margin-top: 64px;
   margin-bottom: 64px;
-  width: 50%;
+}
+
+.headline img {
+  width: 256px;
 }
 
 h1 {
@@ -86,6 +89,7 @@ video {
 }
 .new-cities-link img {
   width: 100%;
+  image-rendering: auto;
 }
 
 .new-cities-link-label {
@@ -124,10 +128,13 @@ video {
 }
 
 .social-media-links {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .social-media-links a {
   background-repeat: no-repeat;
+  background-size: contain;
   display: inline-block;
   width: 64px;
   height: 64px;
@@ -150,4 +157,27 @@ video {
   background-image: url("/img/conor.png");
 }
 
+@media screen and (max-width: 1024px) {
+  h1, h2, .new-cities-link-label {
+    font-size: 400%;
+  }
+
+  h4 {
+    font-size: 200%;
+  }
+
+  h3 {
+    font-size: 150%;
+  }
+
+  video {
+    width: 100%;
+    margin: 0;
+  }
+
+  .social-media-links a {
+    width: 32px;
+    height: 32px;
+  }
+}
 
