@@ -77,6 +77,20 @@ video {
   width: 100%;
 }
 
+.look-up-link {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 64px;
+  margin-top: 64px;
+  width: 40%;
+  font-size: 0;
+}
+.look-up-link img {
+  width: 100%;
+}
+
+
 .new-cities-link {
   display: block;
   position: relative;
