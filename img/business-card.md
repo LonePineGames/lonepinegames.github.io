@@ -1,6 +1,6 @@
 Lone Pine - Conor Sullivan
 
-Technology and Art - Javascript Developer
+Technology, Games and Art - Javascript Developer
 
 lonepine.io - conorwsullivan.com
 
