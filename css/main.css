@@ -150,8 +150,8 @@ video {
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;
-  width: 64px;
-  height: 64px;
+  width: 32px;
+  height: 32px;
   margin: 16px;
 }
 
