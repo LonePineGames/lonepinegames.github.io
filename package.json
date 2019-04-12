@@ -4,7 +4,7 @@
   "description": "Website for Lone Pine Games",
   "main": "index.js",
   "dependencies": {
-    "serve": "^8.1.2"
+    "serve": "^11.0.0"
   },
   "devDependencies": {},
   "scripts": {
