@@ -2,14 +2,12 @@
   font-family: 'Comfortaa', sans-serif;
   text-align: center;
   color: #426b53;
-  /*color: #2d592d;*/
-  font-variant: small-caps;
+  /*font-variant: small-caps;*/
   font-weight: 500;
 }
 
 body {
   background-color: #101010;
-  image-rendering: pixelated;
   margin: 0px;
 }
 
@@ -30,7 +28,7 @@ h1 {
 h2 {
   font-size: 700%;
   text-shadow: 4px 4px #000;
-  margin: 10px;
+  margin: 20px;
 }
 
 h3 {
@@ -116,21 +114,20 @@ video {
 }
 
 .lone-pine-link {
-  display: block;
   font-size: 200%;
-  margin: 20px;
-
-  font-family: 'Comfortaa', sans-serif;
-  color: #426b53;
-  text-shadow: 4px 4px #000;
-  font-variant: small-caps;
-  font-weight: 500;
-  text-decoration: none;
+  margin: 20px 0 20px 0;
 }
 
 .lone-pine-link img {
+  display: block;
+  margin: 20px auto 20px auto;
   vertical-align: middle;
-  height: 50px;
+  height: 128px;
+}
+
+.lone-pine-email {
+  font-size: 200%;
+  margin: 20px 0 100px 0;
 }
 
 .new-cities-headline {
@@ -159,38 +156,31 @@ video {
   background-image: url("/img/reddit.png");
 }
 
+.social-media-links .youtube {
+  background-image: url("/img/youtube.png");
+}
+
+.social-media-links .twitch {
+  background-image: url("/img/twitch.png");
+}
+
+.social-media-links .steam {
+  background-image: url("/img/steam.png");
+}
+
+.social-media-links .discord {
+  background-image: url("/img/discord.svg");
+}
+
 .social-media-links .mail {
+  image-rendering: pixelated;
   background-image: url("/img/mail.png");
 }
 
 .social-media-links .conor {
+  image-rendering: pixelated;
   background-image: url("/img/conor.png");
 }
-
-@media screen and (max-width: 1024px) {
-  h1, h2, .new-cities-link-label {
-    font-size: 400%;
-  }
-
-  h4 {
-    font-size: 200%;
-  }
-
-  h3 {
-    font-size: 150%;
-  }
-
-  video {
-    width: 100%;
-    margin: 0;
-  }
-
-  .social-media-links a {
-    width: 32px;
-    height: 32px;
-  }
-}
-
 .responsive-container {
   position: relative;
   padding-bottom: 40%;
@@ -215,5 +205,58 @@ video {
 }
 
 .release-date {
-  margin-bottom: 30px;
+  display: block;
+  font-size: 300%;
+  text-decoration: none;
+  margin: 20px 0 20px 0;
 }
+
+.release-date img {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 20px auto 20px auto;
+}
+
+.release-date span {
+  vertical-align: middle;
+}
+
+.features {
+  padding: 40px 20px 40px 20px;
+}
+
+.features li {
+  list-style: none;
+  font-size: 150%;
+  height: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+  h1, h2, .new-cities-link-label {
+    font-size: 400%;
+  }
+
+  h4 {
+    font-size: 200%;
+  }
+
+  h3 {
+    font-size: 150%;
+  }
+
+  video {
+    width: 100%;
+    margin: 0;
+  }
+
+  .social-media-links a {
+    width: 32px;
+    height: 32px;
+  }
+
+  .features li {
+    font-size: 100%;
+  }
+}
+
+
