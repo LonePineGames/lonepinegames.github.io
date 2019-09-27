@@ -55,6 +55,7 @@ h4 {
 .header-link {
   margin: 20px;
   font-size: 400%;
+  text-align: right;
 }
 
 video {
