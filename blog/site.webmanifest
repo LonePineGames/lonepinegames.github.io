@@ -1,0 +1,20 @@
+{
+    "name": "New Cities",
+    "short_name": "New Cities",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png?v=Rymxjka8oz",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png?v=Rymxjka8oz",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#61734a",
+    "background_color": "#61734a",
+    "start_url": "lonepine.io",
+    "display": "standalone"
+}
