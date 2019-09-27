@@ -1,5 +1,5 @@
 * {
-  font-family: 'Comfortaa', sans-serif;
+  font-family: 'Play', sans-serif;
   text-align: center;
   color: #426b53;
   /*font-variant: small-caps;*/
@@ -29,6 +29,9 @@ h2 {
   font-size: 700%;
   text-shadow: 4px 4px #000;
   margin: 20px;
+  display: inline-block;
+  text-align: left;
+  width: 50%;
 }
 
 h3 {
@@ -47,6 +50,11 @@ h4 {
   margin: 10px;
   font-size: 200%;
   text-shadow: 2px 2px #000;
+}
+
+.header-link {
+  margin: 20px;
+  font-size: 400%;
 }
 
 video {
@@ -207,7 +215,7 @@ video {
 .release-date {
   display: block;
   font-size: 300%;
-  text-decoration: none;
+  /*text-decoration: none;*/
   margin: 20px 0 20px 0;
 }
 

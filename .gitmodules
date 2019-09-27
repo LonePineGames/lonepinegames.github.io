@@ -1,0 +1,3 @@
+[submodule "friday-facts"]
+	path = friday-facts
+	url = https://github.com/conorwsullivan/friday-facts.git
