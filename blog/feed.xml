@@ -1,29 +1,61 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2019-09-27T14:43:49-07:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">New Cities</title><subtitle>Build Prosperity.</subtitle><entry><title type="html">New Cities Friday Facts #1</title><link href="http://localhost:4000/blog/2019/09/26/new-cities-friday-facts.html" rel="alternate" type="text/html" title="New Cities Friday Facts #1" /><published>2019-09-26T15:00:00-07:00</published><updated>2019-09-26T15:00:00-07:00</updated><id>http://localhost:4000/blog/2019/09/26/new-cities-friday-facts</id><content type="html" xml:base="http://localhost:4000/blog/2019/09/26/new-cities-friday-facts.html">&lt;p&gt;Hi, Lone Pine here. I’m going to start posting weekly updates on the project to keep you guys informed of what’s going on, what features are being worked on, and our progress on the road to release.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2019-10-04T20:11:15-07:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">New Cities</title><subtitle>Build Prosperity.</subtitle><entry><title type="html">New Cities Friday Facts #2: Sound and Music</title><link href="http://localhost:4000/blog/2019/10/04/sounds.html" rel="alternate" type="text/html" title="New Cities Friday Facts #2: Sound and Music" /><published>2019-10-04T19:00:00-07:00</published><updated>2019-10-04T19:00:00-07:00</updated><id>http://localhost:4000/blog/2019/10/04/sounds</id><content type="html" xml:base="http://localhost:4000/blog/2019/10/04/sounds.html">&lt;figure class=&quot;image&quot;&gt;
+  &lt;a href=&quot;/blog/assets/images/sunset.png&quot;&gt;
+    &lt;img src=&quot;/blog/assets/images/sunset.png&quot; alt=&quot;This post is about sound, so here's a pretty image.&quot; /&gt;
+    &lt;figcaption&gt;This post is about sound, so here's a pretty image.&lt;/figcaption&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;For a long time, it wasn’t in my plans for the game to have sound by the time it went to early access. Its not that I didn’t want sound, but it wasn’t a priority. I can’t recall ever having played a game without sound (or without music), but I also never felt like it was the most important part of any game. For a thousand-hour game, most players will mute the game music at some point and listen to their own music, or a podcast, etc. This week I implemented environmental sounds in the game, and I’m happy to say that I was wrong about it’s importance – sound makes the game a much more complete audio-visual experience.&lt;/p&gt;
+
+&lt;p&gt;Music was never a talent of mine and I never learned to play an instrument. I had planned to make connections with a musician and either licence their music or have them compose music for the game. However, when it came time to make a trailer, I hadn’t made any such connection. I strongly believe that a good trailer needs music, so I had to find something. I eventually tried composing music using MuseScore. MuseScore is an application to write songs using a virtual sheet music interface – almost like a front-end to MIDI. After the trailer was released, I was approached by musicians offering to compose music for the game. However, I’m quite proud of the music I’ve made and I plan to make more. I’m also thinking about using Audacity to add samples and effects to the music, in order to make it more full and less “MIDI-like”.&lt;/p&gt;
+
+&lt;p&gt;Video game music is usually around a melodic chord progressions which are plesant enough to not be tedious when repeated for a long time. I still haven’t figured out the arcane rules of chord progressions, but fortunately people who do understand them have written chord progression generators that can easily be found through Google. All of the game music is created by starting with one of these progressions, and then just repeating, modifying, and playing with the pattern of notes and beats to make it interesting.&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;img src=&quot;/blog/assets/images/city_overview.png&quot; alt=&quot;A small town, just shy of the 20,000 people needed to officially be a city.&quot; /&gt;
-  &lt;figcaption&gt;A small town, just shy of the 20,000 people needed to officially be a city.&lt;/figcaption&gt;
+  &lt;a href=&quot;/blog/assets/images/menu.png&quot;&gt;
+    &lt;img src=&quot;/blog/assets/images/menu.png&quot; alt=&quot;The main menu. I also added clouds to the skybox this week.&quot; /&gt;
+    &lt;figcaption&gt;The main menu. I also added clouds to the skybox this week.&lt;/figcaption&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Once I had music implemented in the game, it was easy enough to add user interface sound effects (a click sound when you place a road, for example). But for a while there were no environmental sounds. This week I changed that. I’ve implemented a pretty immersive sound environment. There are ambient sounds of traffic, human activity, and life in the city. There are also sounds for the wind, rain, water, and wildlife. I even added a fun retro floppy disk sound when the game starts and on save/load. These additions really add a lot to the game.&lt;/p&gt;
+
+&lt;p&gt;I plan for New Cities will be your next thousand-hour game. To meet that standard, you’ll need to have a positive immersive experience within the first hour. Even if you mute the game after a day or two, your brain will remember that immersiveness. This will keep the game enjoyable for a long time.&lt;/p&gt;
+
+&lt;p&gt;If you’re excited about the project, join the &lt;a href=&quot;https://discord.gg/udgeB2E&quot;&gt;discord&lt;/a&gt; or &lt;a href=&quot;https://www.reddit.com/r/New_Cities&quot;&gt;subreddit&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">This post is about sound, so here's a pretty image.</summary></entry><entry><title type="html">New Cities Friday Facts #1</title><link href="http://localhost:4000/blog/2019/09/26/new-cities-friday-facts.html" rel="alternate" type="text/html" title="New Cities Friday Facts #1" /><published>2019-09-26T15:00:00-07:00</published><updated>2019-09-26T15:00:00-07:00</updated><id>http://localhost:4000/blog/2019/09/26/new-cities-friday-facts</id><content type="html" xml:base="http://localhost:4000/blog/2019/09/26/new-cities-friday-facts.html">&lt;p&gt;Hi, Lone Pine here. I’m going to start posting weekly updates on the project to keep you guys informed of what’s going on, what features are being worked on, and our progress on the road to release.&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+  &lt;a href=&quot;/blog/assets/images/city_overview.png&quot;&gt;
+    &lt;img src=&quot;/blog/assets/images/city_overview.png&quot; alt=&quot;A small town, just shy of the 20,000 people needed to officially be a city.&quot; /&gt;
+    &lt;figcaption&gt;A small town, just shy of the 20,000 people needed to officially be a city.&lt;/figcaption&gt;
+  &lt;/a&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;If you’re new here, I’m working on a city builder called New Cities. Over the last year, I’ve developed a basic city builder with a traffic simulation and customizable 3D rendered buildings. In the past few months I’ve fully implemented “The Prosperity System” which will define the game. It’s a dynamic economic model where neighborhoods thrive or fail based on access to work, shopping, parks, and schools.&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;img src=&quot;/blog/assets/images/prosperity.png&quot; alt=&quot;The Prosperity heatmap. There are two prosperous areas, one around the city center and the other around a small shopping area.&quot; /&gt;
-  &lt;figcaption&gt;The Prosperity heatmap. There are two prosperous areas, one around the city center and the other around a small shopping area.&lt;/figcaption&gt;
+  &lt;a href=&quot;/blog/assets/images/prosperity.png&quot;&gt;
+    &lt;img src=&quot;/blog/assets/images/prosperity.png&quot; alt=&quot;The Prosperity heatmap. There are two prosperous areas, one around the city center and the other around a small shopping area.&quot; /&gt;
+    &lt;figcaption&gt;The Prosperity heatmap. There are two prosperous areas, one around the city center and the other around a small shopping area.&lt;/figcaption&gt;
+  &lt;/a&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;The game is based around six “heatmaps”. The heatmaps are Pollution, Crime, Education, Prosperity, Value, and Density. Essentially, Education (plus a good road system) creates Prosperity, Prosperity (among other things) creates Value, and Value (plus Prosperity) creates Density. However, Density creates Crime and Pollution, which have a negative impact on Prosperity and Value, creating a &lt;a href=&quot;https://en.wikipedia.org/wiki/Negative_feedback&quot;&gt;negative feedback loop&lt;/a&gt;. Negative feedback loops are important to me, since they counteract the explosive nature of positive feedback loops which turn many simulation games into sandboxes.&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;img src=&quot;/blog/assets/images/value.png&quot; alt=&quot;The Value heatmap. There are two high-value areas around the city center and a shopping area. The red in the top right is a low value area, since there isn't a school in that neighborhood. The white buildings are schools.&quot; /&gt;
-  &lt;figcaption&gt;The Value heatmap. There are two high-value areas around the city center and a shopping area. The red in the top right is a low value area, since there isn't a school in that neighborhood. The white buildings are schools.&lt;/figcaption&gt;
+  &lt;a href=&quot;/blog/assets/images/value.png&quot;&gt;
+    &lt;img src=&quot;/blog/assets/images/value.png&quot; alt=&quot;The Value heatmap. There are two high-value areas around the city center and a shopping area. The red in the top right is a low value area, since there isn't a school in that neighborhood. The white buildings are schools.&quot; /&gt;
+    &lt;figcaption&gt;The Value heatmap. There are two high-value areas around the city center and a shopping area. The red in the top right is a low value area, since there isn't a school in that neighborhood. The white buildings are schools.&lt;/figcaption&gt;
+  &lt;/a&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;As a player, you have two options. You can buy very expensive city services (schools, parks, police stations, etc) to cut through the negative feedback loop. Alternately, you can build a broad, flat, suburban city, with the intention to grow a dense city center later in the game. I call these two approaches “San Francisco vs Los Angeles.” I consider this to be a kind of morality system, creating the opportunity for different playstyles and different cities.&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;img src=&quot;/blog/assets/images/abandoned_city_center.png&quot; alt=&quot;Downtown in a declining city, where several buildings are abandoned.&quot; /&gt;
-  &lt;figcaption&gt;Downtown in a declining city, where several buildings are abandoned.&lt;/figcaption&gt;
+  &lt;a href=&quot;/blog/assets/images/abandoned_city_center.png&quot;&gt;
+    &lt;img src=&quot;/blog/assets/images/abandoned_city_center.png&quot; alt=&quot;Downtown in a declining city, where several buildings are abandoned.&quot; /&gt;
+    &lt;figcaption&gt;Downtown in a declining city, where several buildings are abandoned.&lt;/figcaption&gt;
+  &lt;/a&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;In this game, a city doesn’t just linearly grow. Instead the community behaves like a living orgasm, emerging out of chaos and always at risk of dying. You’ll have to shepherd your city through randomized recessions in the national economy as well as the consequences of any blunders you make. It will be a more random game than previous city builders, with a more vulnerable budget maintaining a fundamentally unstable economic system.&lt;/p&gt;
