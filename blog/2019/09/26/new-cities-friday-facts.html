@@ -15,9 +15,19 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-09-26T15:00:00-07:00" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2019/09/26/new-cities-friday-facts.html"},"description":"Hi, Lone Pine here. I’m going to start posting weekly updates on the project to keep you guys informed of what’s going on, what features are being worked on, and our progress on the road to release.","@type":"BlogPosting","url":"http://localhost:4000/blog/2019/09/26/new-cities-friday-facts.html","headline":"New Cities Friday Facts #1","dateModified":"2019-09-26T15:00:00-07:00","datePublished":"2019-09-26T15:00:00-07:00","@context":"https://schema.org"}</script>
+{"headline":"New Cities Friday Facts #1","dateModified":"2019-09-26T15:00:00-07:00","datePublished":"2019-09-26T15:00:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2019/09/26/new-cities-friday-facts.html"},"description":"Hi, Lone Pine here. I’m going to start posting weekly updates on the project to keep you guys informed of what’s going on, what features are being worked on, and our progress on the road to release.","@type":"BlogPosting","url":"http://localhost:4000/blog/2019/09/26/new-cities-friday-facts.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="apple-touch-icon" sizes="180x180"
+<!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147711440-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-147711440-1');
+  </script>
+
+  <link rel="apple-touch-icon" sizes="180x180"
     href="/apple-touch-icon.png?v=Rymxjka8oz">
   <link rel="icon" type="image/png" sizes="32x32"
     href="/favicon-32x32.png?v=Rymxjka8oz">
@@ -76,8 +86,8 @@
   <div class="post-content e-content" itemprop="articleBody">
     <p>Hi, Lone Pine here. I’m going to start posting weekly updates on the project to keep you guys informed of what’s going on, what features are being worked on, and our progress on the road to release.</p>
 
-<figure class="image">
-  <a href="/blog/assets/images/city_overview.png">
+<figure class="image ">
+  <a href="">
     <img src="/blog/assets/images/city_overview.png" alt="A small town, just shy of the 20,000 people needed to officially be a city." />
     <figcaption>A small town, just shy of the 20,000 people needed to officially be a city.</figcaption>
   </a>
@@ -85,8 +95,8 @@
 
 <p>If you’re new here, I’m working on a city builder called New Cities. Over the last year, I’ve developed a basic city builder with a traffic simulation and customizable 3D rendered buildings. In the past few months I’ve fully implemented “The Prosperity System” which will define the game. It’s a dynamic economic model where neighborhoods thrive or fail based on access to work, shopping, parks, and schools.</p>
 
-<figure class="image">
-  <a href="/blog/assets/images/prosperity.png">
+<figure class="image ">
+  <a href="">
     <img src="/blog/assets/images/prosperity.png" alt="The Prosperity heatmap. There are two prosperous areas, one around the city center and the other around a small shopping area." />
     <figcaption>The Prosperity heatmap. There are two prosperous areas, one around the city center and the other around a small shopping area.</figcaption>
   </a>
@@ -94,8 +104,8 @@
 
 <p>The game is based around six “heatmaps”. The heatmaps are Pollution, Crime, Education, Prosperity, Value, and Density. Essentially, Education (plus a good road system) creates Prosperity, Prosperity (among other things) creates Value, and Value (plus Prosperity) creates Density. However, Density creates Crime and Pollution, which have a negative impact on Prosperity and Value, creating a <a href="https://en.wikipedia.org/wiki/Negative_feedback">negative feedback loop</a>. Negative feedback loops are important to me, since they counteract the explosive nature of positive feedback loops which turn many simulation games into sandboxes.</p>
 
-<figure class="image">
-  <a href="/blog/assets/images/value.png">
+<figure class="image ">
+  <a href="">
     <img src="/blog/assets/images/value.png" alt="The Value heatmap. There are two high-value areas around the city center and a shopping area. The red in the top right is a low value area, since there isn't a school in that neighborhood. The white buildings are schools." />
     <figcaption>The Value heatmap. There are two high-value areas around the city center and a shopping area. The red in the top right is a low value area, since there isn't a school in that neighborhood. The white buildings are schools.</figcaption>
   </a>
@@ -103,8 +113,8 @@
 
 <p>As a player, you have two options. You can buy very expensive city services (schools, parks, police stations, etc) to cut through the negative feedback loop. Alternately, you can build a broad, flat, suburban city, with the intention to grow a dense city center later in the game. I call these two approaches “San Francisco vs Los Angeles.” I consider this to be a kind of morality system, creating the opportunity for different playstyles and different cities.</p>
 
-<figure class="image">
-  <a href="/blog/assets/images/abandoned_city_center.png">
+<figure class="image ">
+  <a href="">
     <img src="/blog/assets/images/abandoned_city_center.png" alt="Downtown in a declining city, where several buildings are abandoned." />
     <figcaption>Downtown in a declining city, where several buildings are abandoned.</figcaption>
   </a>

@@ -282,7 +282,7 @@ table td { border: 1px solid #e8e8e8; }
 
 .highlight .il { color: #099; }
 
-body { background: #263d2f; background: linear-gradient(300deg, #263d2f 0%, #2f4d3b 100%); color: #ffffff; font-family: 'Montserrat', sans-serif; }
+body { background: #263d2f; background: linear-gradient(300deg, #263d2f 0%, #2f4d3b 100%); color: #ffffff; font-family: 'Montserrat', sans-serif; text-align: justify; }
 
 .site-header, .site-footer { border: none; }
 
@@ -308,9 +308,15 @@ h1 { font-family: 'Play', sans-serif; }
 
 .footer-col-3 { width: inherit; }
 
-figure { position: relative; }
+figure { position: relative; width: max-content; max-width: 100%; margin: 40px auto 40px auto; }
 
-figure figcaption { position: absolute; bottom: 0px; right: 0px; background-color: rgba(0, 0, 0, 0.85); max-width: 80%; padding: 5px; margin: 5px; }
+figure figcaption { position: absolute; bottom: 0px; right: 0px; background-color: rgba(0, 0, 0, 0.85); max-width: 80%; padding: 5px; margin: 5px 5px; }
+
+figure.caption-top figcaption { top: 20px; left: 20px; bottom: initial; right: initial; }
+
+figure.caption-below figcaption { position: initial; margin: 0px; text-align: right; max-width: none; }
+
+video { max-width: 100%; }
 
 @media screen and (max-width: 600px) { .site-nav { display: none; }
   figure { position: unset; }
