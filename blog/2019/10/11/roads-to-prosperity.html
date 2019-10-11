@@ -86,8 +86,8 @@
   <div class="post-content e-content" itemprop="articleBody">
     <figure class="video caption-top ">
   <video autoplay="" loop="" controls="" poster="/blog/assets/images/interchange.png">
-    <source src="/blog/assets/video/interchange.mp4" />
-    <source src="/blog/assets/video/interchange.webm" type="video/webm" />
+    <source src="https://github.com/LonePineGames/lonepinegames.github.io/releases/download/v0.3.0/interchange.mp4" />
+    <source src="https://github.com/LonePineGames/lonepinegames.github.io/releases/download/v0.3.0/interchange.webm" />
   </video>
   <figcaption>A stack interchange</figcaption>
 </figure>
@@ -100,11 +100,13 @@
 
 <figure class="video caption-top caption-below">
   <video autoplay="" loop="" controls="" poster="/blog/assets/images/planner.png">
-    <source src="/blog/assets/video/planner.mp4" />
-    <source src="/blog/assets/video/planner.webm" type="video/webm" />
+    <source src="https://github.com/LonePineGames/lonepinegames.github.io/releases/download/v0.3.0/planner.mp4" />
+    <source src="https://github.com/LonePineGames/lonepinegames.github.io/releases/download/v0.3.0/planner.webm" />
   </video>
-  <figcaption>Designing an expressway ramp in Planner Mode, which allows you to evaluate road designs before paying for them.</figcaption>
+  <figcaption>A stack interchange</figcaption>
 </figure>
+
+<p>description=”Designing an expressway ramp in Planner Mode, which allows you to evaluate road designs before paying for them.” %}</p>
 
 <p>In order to lay the groundwork for these many modes of transit, I needed to refactor and improve “the graph.” The graph is the internal representation of the road system. In the language of <a href="https://en.wikipedia.org/wiki/Graph_theory">graph theory</a>, the intersections and junctions are “nodes” and the road segments connecting them are “edges”. Each edge connects two nodes, and each node to can connect up to six edges.</p>
 
@@ -123,11 +125,13 @@
 
 <figure class="video caption-top ">
   <video autoplay="" loop="" controls="" poster="/blog/assets/images/splits.png">
-    <source src="/blog/assets/video/splits.mp4" />
-    <source src="/blog/assets/video/splits.webm" type="video/webm" />
+    <source src="https://github.com/LonePineGames/lonepinegames.github.io/releases/download/v0.3.0/splits.mp4" />
+    <source src="https://github.com/LonePineGames/lonepinegames.github.io/releases/download/v0.3.0/splits.webm" />
   </video>
-  <figcaption>How splits work</figcaption>
+  <figcaption>A stack interchange</figcaption>
 </figure>
+
+<p>description=”How splits work” %}</p>
 
 <p>Once the splits are all resolved, intersections must be geometrically arranged, illegal states must be detected (underwater, too steep, etc), and costs must be computed. Terrain must be leveled, buildings must also be leveled, buildings and lots must be reassigned, new zone-able lots must be allocated, and the lane system must be updated. Finally, everything has to be rendered to screen.</p>
 
@@ -139,11 +143,13 @@
 
 <figure class="video caption-top ">
   <video autoplay="" loop="" controls="" poster="/blog/assets/images/one-way-switch.png">
-    <source src="/blog/assets/video/one-way-switch.mp4" />
-    <source src="/blog/assets/video/one-way-switch.webm" type="video/webm" />
+    <source src="https://github.com/LonePineGames/lonepinegames.github.io/releases/download/v0.3.0/one-way-switch.mp4" />
+    <source src="https://github.com/LonePineGames/lonepinegames.github.io/releases/download/v0.3.0/one-way-switch.webm" />
   </video>
-  <figcaption>Reversing the direction of a one-way road while upgrading it to four lanes and installing traffic lights -- all with just two clicks.</figcaption>
+  <figcaption>A stack interchange</figcaption>
 </figure>
+
+<p>description=”Reversing the direction of a one-way road while upgrading it to four lanes and installing traffic lights – all with just two clicks.” %}</p>
 
 <p>Thirdly, it was difficult to predict where intersections would happen. Sometimes roads would go under or over each other unexpectedly. When you actually did want an overpass, sometimes you’d get an intersection instead.  This was particularly frustrating when building expressways. Now the game computes and displays splits as you’re placing the road, making connection points clear. It also computes and displays an accurate price tag for the road you’re about to place.</p>
 

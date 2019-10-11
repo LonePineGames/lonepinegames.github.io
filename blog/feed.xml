@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2019-10-10T19:33:43-07:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">New Cities</title><subtitle>Build Prosperity.</subtitle><entry><title type="html">New Cities Friday Facts #3: Roads to Prosperity</title><link href="http://localhost:4000/blog/2019/10/11/roads-to-prosperity.html" rel="alternate" type="text/html" title="New Cities Friday Facts #3: Roads to Prosperity" /><published>2019-10-11T00:00:00-07:00</published><updated>2019-10-11T00:00:00-07:00</updated><id>http://localhost:4000/blog/2019/10/11/roads-to-prosperity</id><content type="html" xml:base="http://localhost:4000/blog/2019/10/11/roads-to-prosperity.html">&lt;figure class=&quot;video caption-top &quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2019-10-10T19:53:11-07:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">New Cities</title><subtitle>Build Prosperity.</subtitle><entry><title type="html">New Cities Friday Facts #3: Roads to Prosperity</title><link href="http://localhost:4000/blog/2019/10/11/roads-to-prosperity.html" rel="alternate" type="text/html" title="New Cities Friday Facts #3: Roads to Prosperity" /><published>2019-10-11T00:00:00-07:00</published><updated>2019-10-11T00:00:00-07:00</updated><id>http://localhost:4000/blog/2019/10/11/roads-to-prosperity</id><content type="html" xml:base="http://localhost:4000/blog/2019/10/11/roads-to-prosperity.html">&lt;figure class=&quot;video caption-top &quot;&gt;
   &lt;video autoplay=&quot;&quot; loop=&quot;&quot; controls=&quot;&quot; poster=&quot;/blog/assets/images/interchange.png&quot;&gt;
-    &lt;source src=&quot;/blog/assets/video/interchange.mp4&quot; /&gt;
-    &lt;source src=&quot;/blog/assets/video/interchange.webm&quot; type=&quot;video/webm&quot; /&gt;
+    &lt;source src=&quot;https://github.com/LonePineGames/lonepinegames.github.io/releases/download/v0.3.0/interchange.mp4&quot; /&gt;
+    &lt;source src=&quot;https://github.com/LonePineGames/lonepinegames.github.io/releases/download/v0.3.0/interchange.webm&quot; /&gt;
   &lt;/video&gt;
   &lt;figcaption&gt;A stack interchange&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -14,11 +14,13 @@
 
 &lt;figure class=&quot;video caption-top caption-below&quot;&gt;
   &lt;video autoplay=&quot;&quot; loop=&quot;&quot; controls=&quot;&quot; poster=&quot;/blog/assets/images/planner.png&quot;&gt;
-    &lt;source src=&quot;/blog/assets/video/planner.mp4&quot; /&gt;
-    &lt;source src=&quot;/blog/assets/video/planner.webm&quot; type=&quot;video/webm&quot; /&gt;
+    &lt;source src=&quot;https://github.com/LonePineGames/lonepinegames.github.io/releases/download/v0.3.0/planner.mp4&quot; /&gt;
+    &lt;source src=&quot;https://github.com/LonePineGames/lonepinegames.github.io/releases/download/v0.3.0/planner.webm&quot; /&gt;
   &lt;/video&gt;
-  &lt;figcaption&gt;Designing an expressway ramp in Planner Mode, which allows you to evaluate road designs before paying for them.&lt;/figcaption&gt;
+  &lt;figcaption&gt;A stack interchange&lt;/figcaption&gt;
 &lt;/figure&gt;
+
+&lt;p&gt;description=”Designing an expressway ramp in Planner Mode, which allows you to evaluate road designs before paying for them.” %}&lt;/p&gt;
 
 &lt;p&gt;In order to lay the groundwork for these many modes of transit, I needed to refactor and improve “the graph.” The graph is the internal representation of the road system. In the language of &lt;a href=&quot;https://en.wikipedia.org/wiki/Graph_theory&quot;&gt;graph theory&lt;/a&gt;, the intersections and junctions are “nodes” and the road segments connecting them are “edges”. Each edge connects two nodes, and each node to can connect up to six edges.&lt;/p&gt;
 
@@ -37,11 +39,13 @@
 
 &lt;figure class=&quot;video caption-top &quot;&gt;
   &lt;video autoplay=&quot;&quot; loop=&quot;&quot; controls=&quot;&quot; poster=&quot;/blog/assets/images/splits.png&quot;&gt;
-    &lt;source src=&quot;/blog/assets/video/splits.mp4&quot; /&gt;
-    &lt;source src=&quot;/blog/assets/video/splits.webm&quot; type=&quot;video/webm&quot; /&gt;
+    &lt;source src=&quot;https://github.com/LonePineGames/lonepinegames.github.io/releases/download/v0.3.0/splits.mp4&quot; /&gt;
+    &lt;source src=&quot;https://github.com/LonePineGames/lonepinegames.github.io/releases/download/v0.3.0/splits.webm&quot; /&gt;
   &lt;/video&gt;
-  &lt;figcaption&gt;How splits work&lt;/figcaption&gt;
+  &lt;figcaption&gt;A stack interchange&lt;/figcaption&gt;
 &lt;/figure&gt;
+
+&lt;p&gt;description=”How splits work” %}&lt;/p&gt;
 
 &lt;p&gt;Once the splits are all resolved, intersections must be geometrically arranged, illegal states must be detected (underwater, too steep, etc), and costs must be computed. Terrain must be leveled, buildings must also be leveled, buildings and lots must be reassigned, new zone-able lots must be allocated, and the lane system must be updated. Finally, everything has to be rendered to screen.&lt;/p&gt;
 
@@ -53,11 +57,13 @@
 
 &lt;figure class=&quot;video caption-top &quot;&gt;
   &lt;video autoplay=&quot;&quot; loop=&quot;&quot; controls=&quot;&quot; poster=&quot;/blog/assets/images/one-way-switch.png&quot;&gt;
-    &lt;source src=&quot;/blog/assets/video/one-way-switch.mp4&quot; /&gt;
-    &lt;source src=&quot;/blog/assets/video/one-way-switch.webm&quot; type=&quot;video/webm&quot; /&gt;
+    &lt;source src=&quot;https://github.com/LonePineGames/lonepinegames.github.io/releases/download/v0.3.0/one-way-switch.mp4&quot; /&gt;
+    &lt;source src=&quot;https://github.com/LonePineGames/lonepinegames.github.io/releases/download/v0.3.0/one-way-switch.webm&quot; /&gt;
   &lt;/video&gt;
-  &lt;figcaption&gt;Reversing the direction of a one-way road while upgrading it to four lanes and installing traffic lights -- all with just two clicks.&lt;/figcaption&gt;
+  &lt;figcaption&gt;A stack interchange&lt;/figcaption&gt;
 &lt;/figure&gt;
+
+&lt;p&gt;description=”Reversing the direction of a one-way road while upgrading it to four lanes and installing traffic lights – all with just two clicks.” %}&lt;/p&gt;
 
 &lt;p&gt;Thirdly, it was difficult to predict where intersections would happen. Sometimes roads would go under or over each other unexpectedly. When you actually did want an overpass, sometimes you’d get an intersection instead.  This was particularly frustrating when building expressways. Now the game computes and displays splits as you’re placing the road, making connection points clear. It also computes and displays an accurate price tag for the road you’re about to place.&lt;/p&gt;
 
