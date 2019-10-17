@@ -1,4 +1,48 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://lonepine.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lonepine.io/blog/" rel="alternate" type="text/html" /><updated>2019-10-13T12:06:22-07:00</updated><id>https://lonepine.io/blog/feed.xml</id><title type="html">New Cities</title><subtitle>Build Prosperity.</subtitle><entry><title type="html">New Cities Friday Facts #3: Roads to Prosperity</title><link href="https://lonepine.io/blog/2019/10/11/roads-to-prosperity.html" rel="alternate" type="text/html" title="New Cities Friday Facts #3: Roads to Prosperity" /><published>2019-10-11T00:00:00-07:00</published><updated>2019-10-11T00:00:00-07:00</updated><id>https://lonepine.io/blog/2019/10/11/roads-to-prosperity</id><content type="html" xml:base="https://lonepine.io/blog/2019/10/11/roads-to-prosperity.html">&lt;figure class=&quot;video caption-top &quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2019-10-17T16:44:13-07:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">New Cities</title><subtitle>Build Prosperity.</subtitle><entry><title type="html">New Cities Friday Facts #4: Scale</title><link href="http://localhost:4000/blog/2019/10/18/scale.html" rel="alternate" type="text/html" title="New Cities Friday Facts #4: Scale" /><published>2019-10-18T00:00:00-07:00</published><updated>2019-10-18T00:00:00-07:00</updated><id>http://localhost:4000/blog/2019/10/18/scale</id><content type="html" xml:base="http://localhost:4000/blog/2019/10/18/scale.html">&lt;p&gt;This week I made several improvements to increase the performance and scale of the game.&lt;/p&gt;
+
+&lt;p&gt;A major limitation is practical terrain size. The terrain is divided into chunks, and most of the cities you’ve seen in videos and screenshots so far have been 25x25 chunks. Previously, it would take a long time to render the terrain, largely because each tree was individually meshed. Terrain trees are now &lt;a href=&quot;https://www.khronos.org/opengl/wiki/Vertex_Rendering#Instancing&quot;&gt;instanced&lt;/a&gt;. I also improved the system to randomly place the trees so that they fill the space better, making the forests look denser. The game also now generates high- and low-poly meshes for the terrain for different zoom levels.&lt;/p&gt;
+
+&lt;p&gt;Before, my machine (which is high-end) would struggle at 50x50 and was unplayable at 100x100. Now I have 50x50 as the default and 125x125 is completely playable. I tested at 200x200 and reached RAM/VRAM limitations; therefore going beyond 150x150 would require some sort of just-in-time re-rendering of terrain so it wouldn’t have to be stored in memory at all times, and possibly a third tier of mesh resolution.&lt;/p&gt;
+
+&lt;figure class=&quot;image caption-top&quot;&gt;
+  &lt;!--&lt;a href=&quot;&quot;&gt;--&gt;
+  &lt;a href=&quot;/blog/assets/images/map_size_comparison.png&quot;&gt;
+    &lt;img src=&quot;/blog/assets/images/map_size_comparison.png&quot; alt=&quot;Map sizes compared -- 25x25, 50x50, 100x100, and 125x125&quot; /&gt;
+    &lt;figcaption&gt;Map sizes compared -- 25x25, 50x50, 100x100, and 125x125&lt;/figcaption&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Each chunk is 25 tiles, and each tile is 25 meters, so a chunk is 625 meters on its side. This means that a 100x100 map is 62.5 kilometers, or 38.8 miles, on it’s side. Therefore, a 100x100 map could cover Los Angeles from Santa Monica to Anaheim and Pasadena to Huntington Beach. The San Francisco Bay Area from Berkeley to San Jose and east to Pleasanton would fit quite comfortably in 125x125. 62.5km is just enough to fit the M25 highway which rings London, and all five boroughs of New York would fit in that space too.&lt;/p&gt;
+
+&lt;p&gt;I also improved heatmap performance and save performance. The heatmap performance is dependent on map size. I lowered the resolution of the heatmaps by a factor of 5, meaning a 25x improvement in heatmap performance. As for saving, previously the autosave on large maps caused a slight stutter (100+ms long frame.) I introduced a memory buffer so that saving could be done asynchronously. I also added compression to the save file format, reducing file sizes by a factor of 5.&lt;/p&gt;
+
+&lt;p&gt;To be clear, we’re only talking about terrain size here, and in its current form the game couldn’t represent the traffic and activity in a city the size of London or LA. There are three kinds of activities which take a lot of processing: building construction/upgrading, vehicle simulation, and routing.&lt;/p&gt;
+
+&lt;figure class=&quot;image &quot;&gt;
+  &lt;!--&lt;a href=&quot;&quot;&gt;--&gt;
+  &lt;a href=&quot;/blog/assets/images/simi-valley.png&quot;&gt;
+    &lt;img src=&quot;/blog/assets/images/simi-valley.png&quot; alt=&quot;Displaying many buildings at once. Instanced rendering dramatically improves performance.&quot; /&gt;
+    &lt;figcaption&gt;Displaying many buildings at once. Instanced rendering dramatically improves performance.&lt;/figcaption&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The game is constantly trying to add new buildings everywhere there is a zoned lot. It randomly chooses a lot and one of the building designs and tests to see if the design would be a good fit. It tests if there is reasonably flat terrain, no roads in the way, and that the heatmap has the right density and land value for the design. If there are colliding buildings, it tallies the value of those buildings and compares it to the proposed replacement. Improving the performance is really about choosing the right frequency to try adding a new building, as well as making more intelligent guesses for what building goes where. The goal of the game is to make a skyscraper spawn, and therefore this trial-and-error building-spawning process is a very important game mechanic. It will be iterated upon going into the closed alpha.&lt;/p&gt;
+
+&lt;p&gt;Vehicle simulation will be improved in a future update. The current sim can scale to ten of thousands cars, but struggles at the highest game speed. I expect to produce a 5x improvement in this system when I make the improvement. Additionally, there are certain bugs which cause cars to jam up and stop moving. I’ve already experimented with different ways to prevent jams while improving vehicle sim performance. One possible approach is multithreading and reduced simulation resolution with &lt;a href=&quot;https://en.wikipedia.org/wiki/Inbetweening&quot;&gt;tweening&lt;/a&gt; for on-screen cars. Vehicle simulation must be deterministic, and mixing multithreading with strict determinism can be messy. Nonetheless, I’m confident I can make it work. There will be a Friday Facts on this topic in the near future.&lt;/p&gt;
+
+&lt;figure class=&quot;image caption-bottom&quot;&gt;
+  &lt;!--&lt;a href=&quot;&quot;&gt;--&gt;
+  &lt;a href=&quot;/blog/assets/images/thousands-of-vehicles.png&quot;&gt;
+    &lt;img src=&quot;/blog/assets/images/thousands-of-vehicles.png&quot; alt=&quot;Testing the simulation with thousands of vehicles.&quot; /&gt;
+    &lt;figcaption&gt;Testing the simulation with thousands of vehicles.&lt;/figcaption&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;As for routing, the solution that has worked so far is caching, and I expect more caching will get us a long way, if not all the way to San Jose. Currently routing is done using [A*]. One issue is that the cache is not saved to disk, which causes poor performance immediately after loading a large city, but that will be rectified soon. Once I’ve exhausted the benefits of caching, I’ll have to look at more sophisticated routing and graph-processing algorithms. I’m curious how services like Google Maps are optimized. I assume they do a great deal of pre-processing, caching and aggregation. Inevitably I will do the same.&lt;/p&gt;
+
+&lt;p&gt;These improvements mean two things: for those with high-end computers, you’ll be able to play larger maps and bigger cities without any FPS drop. For those with lower-end or older computers, this might grant you the ability to play the game at all, with an FPS that’s acceptable. My dream is a game that can support region scale cities, and I will make that dream a reality – promise!&lt;/p&gt;
+
+&lt;p&gt;If you’re excited about the project, join the &lt;a href=&quot;https://discord.gg/udgeB2E&quot;&gt;discord&lt;/a&gt; or &lt;a href=&quot;https://www.reddit.com/r/New_Cities&quot;&gt;subreddit&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">This week I made several improvements to increase the performance and scale of the game.</summary></entry><entry><title type="html">New Cities Friday Facts #3: Roads to Prosperity</title><link href="http://localhost:4000/blog/2019/10/11/roads-to-prosperity.html" rel="alternate" type="text/html" title="New Cities Friday Facts #3: Roads to Prosperity" /><published>2019-10-11T00:00:00-07:00</published><updated>2019-10-11T00:00:00-07:00</updated><id>http://localhost:4000/blog/2019/10/11/roads-to-prosperity</id><content type="html" xml:base="http://localhost:4000/blog/2019/10/11/roads-to-prosperity.html">&lt;figure class=&quot;video caption-top &quot;&gt;
   &lt;video autoplay=&quot;&quot; loop=&quot;&quot; controls=&quot;&quot; poster=&quot;/blog/assets/images/interchange.png&quot;&gt;
     &lt;source src=&quot;https://github.com/LonePineGames/lonepinegames.github.io/releases/download/v0.3.0/interchange.mp4&quot; /&gt;
     &lt;source src=&quot;https://github.com/LonePineGames/lonepinegames.github.io/releases/download/v0.3.0/interchange.webm&quot; /&gt;
@@ -23,6 +67,7 @@
 &lt;p&gt;In order to lay the groundwork for these many modes of transit, I needed to refactor and improve “the graph.” The graph is the internal representation of the road system. In the language of &lt;a href=&quot;https://en.wikipedia.org/wiki/Graph_theory&quot;&gt;graph theory&lt;/a&gt;, the intersections and junctions are “nodes” and the road segments connecting them are “edges”. Each edge connects two nodes, and each node to can connect up to six edges.&lt;/p&gt;
 
 &lt;figure class=&quot;image caption-below&quot;&gt;
+  &lt;!--&lt;a href=&quot;https://xkcd.com/2036/&quot;&gt;--&gt;
   &lt;a href=&quot;https://xkcd.com/2036/&quot;&gt;
     &lt;img src=&quot;/blog/assets/images/edgelord.png&quot; alt=&quot;XKCD 2036&quot; /&gt;
     &lt;figcaption&gt;XKCD 2036&lt;/figcaption&gt;
@@ -63,8 +108,9 @@
 
 &lt;p&gt;Transportation is really at the core of New Cities, and building roads is part of the &lt;a href=&quot;https://gameanalytics.com/blog/how-to-perfect-your-games-core-loop.html&quot;&gt;core gameplay loop&lt;/a&gt;. I’m very glad that I’ve made these improvements. This project is moving forward at HOV lane speeds, so I’m thankful that you’re riding carpool with me.&lt;/p&gt;
 
-&lt;p&gt;If you’re excited about the project, join the &lt;a href=&quot;https://discord.gg/udgeB2E&quot;&gt;discord&lt;/a&gt; or &lt;a href=&quot;https://www.reddit.com/r/New_Cities&quot;&gt;subreddit&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">A stack interchange</summary></entry><entry><title type="html">New Cities Friday Facts #2: Sound and Music</title><link href="https://lonepine.io/blog/2019/10/04/sounds.html" rel="alternate" type="text/html" title="New Cities Friday Facts #2: Sound and Music" /><published>2019-10-04T19:00:00-07:00</published><updated>2019-10-04T19:00:00-07:00</updated><id>https://lonepine.io/blog/2019/10/04/sounds</id><content type="html" xml:base="https://lonepine.io/blog/2019/10/04/sounds.html">&lt;figure class=&quot;image &quot;&gt;
-  &lt;a href=&quot;&quot;&gt;
+&lt;p&gt;If you’re excited about the project, join the &lt;a href=&quot;https://discord.gg/udgeB2E&quot;&gt;discord&lt;/a&gt; or &lt;a href=&quot;https://www.reddit.com/r/New_Cities&quot;&gt;subreddit&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">A stack interchange</summary></entry><entry><title type="html">New Cities Friday Facts #2: Sound and Music</title><link href="http://localhost:4000/blog/2019/10/04/sounds.html" rel="alternate" type="text/html" title="New Cities Friday Facts #2: Sound and Music" /><published>2019-10-04T19:00:00-07:00</published><updated>2019-10-04T19:00:00-07:00</updated><id>http://localhost:4000/blog/2019/10/04/sounds</id><content type="html" xml:base="http://localhost:4000/blog/2019/10/04/sounds.html">&lt;figure class=&quot;image &quot;&gt;
+  &lt;!--&lt;a href=&quot;&quot;&gt;--&gt;
+  &lt;a href=&quot;/blog/assets/images/sunset.png&quot;&gt;
     &lt;img src=&quot;/blog/assets/images/sunset.png&quot; alt=&quot;This post is about sound, so here's a pretty image.&quot; /&gt;
     &lt;figcaption&gt;This post is about sound, so here's a pretty image.&lt;/figcaption&gt;
   &lt;/a&gt;
@@ -77,7 +123,8 @@
 &lt;p&gt;Video game music is usually built around melodic chord progressions which are plesant enough to not be tedious when repeated for a long time. I still haven’t figured out the arcane rules of chord progressions, but fortunately people who do understand them have written chord progression generators that can easily be found through Google. All of the game music is created by starting with one of these progressions, and then just repeating, modifying, and playing with the pattern of notes and beats to make it interesting.&lt;/p&gt;
 
 &lt;figure class=&quot;image &quot;&gt;
-  &lt;a href=&quot;&quot;&gt;
+  &lt;!--&lt;a href=&quot;&quot;&gt;--&gt;
+  &lt;a href=&quot;/blog/assets/images/menu.png&quot;&gt;
     &lt;img src=&quot;/blog/assets/images/menu.png&quot; alt=&quot;The main menu. I also added clouds to the skybox this week.&quot; /&gt;
     &lt;figcaption&gt;The main menu. I also added clouds to the skybox this week.&lt;/figcaption&gt;
   &lt;/a&gt;
@@ -87,10 +134,11 @@
 
 &lt;p&gt;I plan for New Cities to be your next thousand-hour game. To meet that standard, you’ll need to have a positive immersive experience within the first hour. Even if you mute the game after a day or two, your brain will remember that immersiveness. This will keep the game enjoyable for a long time.&lt;/p&gt;
 
-&lt;p&gt;If you’re excited about the project, join the &lt;a href=&quot;https://discord.gg/udgeB2E&quot;&gt;discord&lt;/a&gt; or &lt;a href=&quot;https://www.reddit.com/r/New_Cities&quot;&gt;subreddit&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">This post is about sound, so here's a pretty image.</summary></entry><entry><title type="html">New Cities Friday Facts #1</title><link href="https://lonepine.io/blog/2019/09/26/new-cities-friday-facts.html" rel="alternate" type="text/html" title="New Cities Friday Facts #1" /><published>2019-09-26T15:00:00-07:00</published><updated>2019-09-26T15:00:00-07:00</updated><id>https://lonepine.io/blog/2019/09/26/new-cities-friday-facts</id><content type="html" xml:base="https://lonepine.io/blog/2019/09/26/new-cities-friday-facts.html">&lt;p&gt;Hi, Lone Pine here. I’m going to start posting weekly updates on the project to keep you guys informed of what’s going on, what features are being worked on, and our progress on the road to release.&lt;/p&gt;
+&lt;p&gt;If you’re excited about the project, join the &lt;a href=&quot;https://discord.gg/udgeB2E&quot;&gt;discord&lt;/a&gt; or &lt;a href=&quot;https://www.reddit.com/r/New_Cities&quot;&gt;subreddit&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">This post is about sound, so here's a pretty image.</summary></entry><entry><title type="html">New Cities Friday Facts #1</title><link href="http://localhost:4000/blog/2019/09/26/new-cities-friday-facts.html" rel="alternate" type="text/html" title="New Cities Friday Facts #1" /><published>2019-09-26T15:00:00-07:00</published><updated>2019-09-26T15:00:00-07:00</updated><id>http://localhost:4000/blog/2019/09/26/new-cities-friday-facts</id><content type="html" xml:base="http://localhost:4000/blog/2019/09/26/new-cities-friday-facts.html">&lt;p&gt;Hi, Lone Pine here. I’m going to start posting weekly updates on the project to keep you guys informed of what’s going on, what features are being worked on, and our progress on the road to release.&lt;/p&gt;
 
 &lt;figure class=&quot;image &quot;&gt;
-  &lt;a href=&quot;&quot;&gt;
+  &lt;!--&lt;a href=&quot;&quot;&gt;--&gt;
+  &lt;a href=&quot;/blog/assets/images/city_overview.png&quot;&gt;
     &lt;img src=&quot;/blog/assets/images/city_overview.png&quot; alt=&quot;A small town, just shy of the 20,000 people needed to officially be a city.&quot; /&gt;
     &lt;figcaption&gt;A small town, just shy of the 20,000 people needed to officially be a city.&lt;/figcaption&gt;
   &lt;/a&gt;
@@ -99,7 +147,8 @@
 &lt;p&gt;If you’re new here, I’m working on a city builder called New Cities. Over the last year, I’ve developed a basic city builder with a traffic simulation and customizable 3D rendered buildings. In the past few months I’ve fully implemented “The Prosperity System” which will define the game. It’s a dynamic economic model where neighborhoods thrive or fail based on access to work, shopping, parks, and schools.&lt;/p&gt;
 
 &lt;figure class=&quot;image &quot;&gt;
-  &lt;a href=&quot;&quot;&gt;
+  &lt;!--&lt;a href=&quot;&quot;&gt;--&gt;
+  &lt;a href=&quot;/blog/assets/images/prosperity.png&quot;&gt;
     &lt;img src=&quot;/blog/assets/images/prosperity.png&quot; alt=&quot;The Prosperity heatmap. There are two prosperous areas, one around the city center and the other around a small shopping area.&quot; /&gt;
     &lt;figcaption&gt;The Prosperity heatmap. There are two prosperous areas, one around the city center and the other around a small shopping area.&lt;/figcaption&gt;
   &lt;/a&gt;
@@ -108,7 +157,8 @@
 &lt;p&gt;The game is based around six “heatmaps”. The heatmaps are Pollution, Crime, Education, Prosperity, Value, and Density. Essentially, Education (plus a good road system) creates Prosperity, Prosperity (among other things) creates Value, and Value (plus Prosperity) creates Density. However, Density creates Crime and Pollution, which have a negative impact on Prosperity and Value, creating a &lt;a href=&quot;https://en.wikipedia.org/wiki/Negative_feedback&quot;&gt;negative feedback loop&lt;/a&gt;. Negative feedback loops are important to me, since they counteract the explosive nature of positive feedback loops which turn many simulation games into sandboxes.&lt;/p&gt;
 
 &lt;figure class=&quot;image &quot;&gt;
-  &lt;a href=&quot;&quot;&gt;
+  &lt;!--&lt;a href=&quot;&quot;&gt;--&gt;
+  &lt;a href=&quot;/blog/assets/images/value.png&quot;&gt;
     &lt;img src=&quot;/blog/assets/images/value.png&quot; alt=&quot;The Value heatmap. There are two high-value areas around the city center and a shopping area. The red in the top right is a low value area, since there isn't a school in that neighborhood. The white buildings are schools.&quot; /&gt;
     &lt;figcaption&gt;The Value heatmap. There are two high-value areas around the city center and a shopping area. The red in the top right is a low value area, since there isn't a school in that neighborhood. The white buildings are schools.&lt;/figcaption&gt;
   &lt;/a&gt;
@@ -117,7 +167,8 @@
 &lt;p&gt;As a player, you have two options. You can buy very expensive city services (schools, parks, police stations, etc) to cut through the negative feedback loop. Alternately, you can build a broad, flat, suburban city, with the intention to grow a dense city center later in the game. I call these two approaches “San Francisco vs Los Angeles.” I consider this to be a kind of morality system, creating the opportunity for different playstyles and different cities.&lt;/p&gt;
 
 &lt;figure class=&quot;image &quot;&gt;
-  &lt;a href=&quot;&quot;&gt;
+  &lt;!--&lt;a href=&quot;&quot;&gt;--&gt;
+  &lt;a href=&quot;/blog/assets/images/abandoned_city_center.png&quot;&gt;
     &lt;img src=&quot;/blog/assets/images/abandoned_city_center.png&quot; alt=&quot;Downtown in a declining city, where several buildings are abandoned.&quot; /&gt;
     &lt;figcaption&gt;Downtown in a declining city, where several buildings are abandoned.&lt;/figcaption&gt;
   &lt;/a&gt;
