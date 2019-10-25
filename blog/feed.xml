@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2019-10-24T20:00:31-07:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">New Cities</title><subtitle>Build Prosperity.</subtitle><entry><title type="html">New Cities Friday Facts #5: Planning For Success</title><link href="http://localhost:4000/blog/2019/10/25/planning-for-success.html" rel="alternate" type="text/html" title="New Cities Friday Facts #5: Planning For Success" /><published>2019-10-25T00:00:00-07:00</published><updated>2019-10-25T00:00:00-07:00</updated><id>http://localhost:4000/blog/2019/10/25/planning-for-success</id><content type="html" xml:base="http://localhost:4000/blog/2019/10/25/planning-for-success.html">&lt;figure class=&quot;video caption-top&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2019-10-24T20:08:05-07:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">New Cities</title><subtitle>Build Prosperity.</subtitle><entry><title type="html">New Cities Friday Facts #5: Planning For Success</title><link href="http://localhost:4000/blog/2019/10/25/planning-for-success.html" rel="alternate" type="text/html" title="New Cities Friday Facts #5: Planning For Success" /><published>2019-10-25T00:00:00-07:00</published><updated>2019-10-25T00:00:00-07:00</updated><id>http://localhost:4000/blog/2019/10/25/planning-for-success</id><content type="html" xml:base="http://localhost:4000/blog/2019/10/25/planning-for-success.html">&lt;figure class=&quot;video caption-top&quot;&gt;
   &lt;video autoplay=&quot;&quot; loop=&quot;&quot; controls=&quot;&quot; poster=&quot;/blog/assets/images/clovers-are-bad.png&quot;&gt;
-    &lt;source src=&quot;/blog/assets/video/clovers-are-bad.mp4&quot; /&gt;
-    &lt;source src=&quot;/blog/assets/video/clovers-are-bad.webm&quot; /&gt;
+    &lt;source src=&quot;https://github.com/LonePineGames/lonepinegames.github.io/releases/download/v0.5.0/clovers-are-bad.mp4&quot; /&gt;
+    &lt;source src=&quot;https://github.com/LonePineGames/lonepinegames.github.io/releases/download/v0.5.0/clovers-are-bad.webm&quot; /&gt;
   &lt;/video&gt;
   &lt;figcaption&gt;This is why cloverleaf interchanges are bad #BanTheClover&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -14,8 +14,8 @@
 
 &lt;figure class=&quot;video caption-top&quot;&gt;
   &lt;video autoplay=&quot;&quot; loop=&quot;&quot; controls=&quot;&quot; poster=&quot;/blog/assets/images/clover-copy.png&quot;&gt;
-    &lt;source src=&quot;/blog/assets/video/clover-copy-short.mp4&quot; /&gt;
-    &lt;source src=&quot;/blog/assets/video/clover-copy-short.webm&quot; /&gt;
+    &lt;source src=&quot;https://github.com/LonePineGames/lonepinegames.github.io/releases/download/v0.5.0/clover-copy-short.mp4&quot; /&gt;
+    &lt;source src=&quot;https://github.com/LonePineGames/lonepinegames.github.io/releases/download/v0.5.0/clover-copy-short.webm&quot; /&gt;
   &lt;/video&gt;
   &lt;figcaption&gt;Duplicate an interchange with just a few clicks.&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -34,8 +34,8 @@
 
 &lt;figure class=&quot;video caption-top&quot;&gt;
   &lt;video autoplay=&quot;&quot; loop=&quot;&quot; controls=&quot;&quot; poster=&quot;/blog/assets/images/neighborhood-copy.png&quot;&gt;
-    &lt;source src=&quot;/blog/assets/video/neighborhood-copy.mp4&quot; /&gt;
-    &lt;source src=&quot;/blog/assets/video/neighborhood-copy.webm&quot; /&gt;
+    &lt;source src=&quot;https://github.com/LonePineGames/lonepinegames.github.io/releases/download/v0.5.0/neighborhood-copy.mp4&quot; /&gt;
+    &lt;source src=&quot;https://github.com/LonePineGames/lonepinegames.github.io/releases/download/v0.5.0/neighborhood-copy.webm&quot; /&gt;
   &lt;/video&gt;
   &lt;figcaption&gt;Living space for thousands - just plop it down!&lt;/figcaption&gt;
 &lt;/figure&gt;
