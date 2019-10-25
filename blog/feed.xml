@@ -1,4 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2019-10-22T17:24:09-07:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">New Cities</title><subtitle>Build Prosperity.</subtitle><entry><title type="html">New Cities Tribune #1</title><link href="http://localhost:4000/blog/2019/10/22/new-cities-tribune-1.html" rel="alternate" type="text/html" title="New Cities Tribune #1" /><published>2019-10-22T00:00:00-07:00</published><updated>2019-10-22T00:00:00-07:00</updated><id>http://localhost:4000/blog/2019/10/22/new-cities-tribune-1</id><content type="html" xml:base="http://localhost:4000/blog/2019/10/22/new-cities-tribune-1.html">&lt;p&gt;&lt;em&gt;This post was contributed by our new community manager, Mitch (supersoup).&lt;/em&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2019-10-24T20:00:31-07:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">New Cities</title><subtitle>Build Prosperity.</subtitle><entry><title type="html">New Cities Friday Facts #5: Planning For Success</title><link href="http://localhost:4000/blog/2019/10/25/planning-for-success.html" rel="alternate" type="text/html" title="New Cities Friday Facts #5: Planning For Success" /><published>2019-10-25T00:00:00-07:00</published><updated>2019-10-25T00:00:00-07:00</updated><id>http://localhost:4000/blog/2019/10/25/planning-for-success</id><content type="html" xml:base="http://localhost:4000/blog/2019/10/25/planning-for-success.html">&lt;figure class=&quot;video caption-top&quot;&gt;
+  &lt;video autoplay=&quot;&quot; loop=&quot;&quot; controls=&quot;&quot; poster=&quot;/blog/assets/images/clovers-are-bad.png&quot;&gt;
+    &lt;source src=&quot;/blog/assets/video/clovers-are-bad.mp4&quot; /&gt;
+    &lt;source src=&quot;/blog/assets/video/clovers-are-bad.webm&quot; /&gt;
+  &lt;/video&gt;
+  &lt;figcaption&gt;This is why cloverleaf interchanges are bad #BanTheClover&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;For a few years, I was highly addicted to the fantastic game &lt;a href=&quot;https://factorio.com/&quot;&gt;Factorio&lt;/a&gt;. Fortunately for you, that addiction has subsided, and now I’m addicted to The Programming Game instead. Factorio’s endgame is amazing because of just how much happens in a giant factory — belts, trains and flying robots, oh my! – and how much they’ve done to maximize the performance. A modern gaming PC can easily run what’s called a “1KSPM” factory; that is, a factory that produces 1000 of each type of science per minute. This requires launching an orbital-class rocket, the most expensive item in the game, every single minute. By &lt;a href=&quot;https://kirkmcdonald.github.io/calc.html#zip=fZJBjsMgDEVvk1WRkmYXicO44CZWwSBjpJk5fYkyi2mHdGPk/z74yyIS23m4YVCLX1mwFKMCXHISNbs8+GjzPPibLXt1droOpBiLLRkcmuIIuZ2teSyyTOM4XjZaN6Poti7Nknx1Som7OFIgBfnuwr+ambvqtatOv+oQ2/CAe3pEb45u4RrCW7kUUAwtyglNAaQ9zfiODg7O1VgDaJIuF/DQJ5lyfyQGdCrkzL0Kt9Wf3EZxxKuRVNkXE2GFH+K++U6CIPGzaRVk8CesstEqgvo5cSTeM3mhf6bDSVxQFPsbef2QPcsT&quot;&gt;my math&lt;/a&gt; that 1KSPM factory produces and consumes at least 100,000 plates of iron per minute, and each of those plates must be transported on a belt (or robot).&lt;/p&gt;
+
+&lt;p&gt;From a performance perspective, an item on a belt is not very different from a car on a highway, so Factorio convinced me that cities with hundreds of thousands of cars zipping around should be possible with today’s hardware. This inspired me to shoot for the moon with my game.&lt;/p&gt;
+
+&lt;p&gt;When I playtest, I experience a lot of the early game – too much! Right now, I need a way to quickly skip past the early game so I can design the giant cities I dream of, while testing the performance and game balance of the mid-to-late game. Building neighborhoods is fun, but it is also the most time consuming part of the game. To accelerate this process, I borrowed a feature from Factorio: Blueprints.&lt;/p&gt;
+
+&lt;figure class=&quot;video caption-top&quot;&gt;
+  &lt;video autoplay=&quot;&quot; loop=&quot;&quot; controls=&quot;&quot; poster=&quot;/blog/assets/images/clover-copy.png&quot;&gt;
+    &lt;source src=&quot;/blog/assets/video/clover-copy-short.mp4&quot; /&gt;
+    &lt;source src=&quot;/blog/assets/video/clover-copy-short.webm&quot; /&gt;
+  &lt;/video&gt;
+  &lt;figcaption&gt;Duplicate an interchange with just a few clicks.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Blueprints are easy to capture – just click, select, and click again. They can be named and saved to a separate file, allowing you to reuse them across all your cities. Blueprints capture roads and expressways, as well as zoned lots and amenities like schools and parks, allowing you to make repeatable neighborhood layouts. They can be rotated, of course, and can also be flipped (or mirrored) – a feature that was frustratingly absent from Factorio! And, of course, Blueprints can be exported to the clipboard and shared with the New Cities community.&lt;/p&gt;
+
+&lt;p&gt;The obvious use case for blueprints is highway interchanges. In all city builders and transportation sims, interchanges are tricky to make, especially in the standard game mode (non-sandbox). Players hate to tear up their beautiful city to open up planning space that might not even be used in the final design. Terrain and the surrounding city can complicate the design. Worse, every misclick and poor decision is an impact on your budget. If only you could just plan your interchange, and verify it’s correctness, before you buy it!&lt;/p&gt;
+
+&lt;p&gt;With each highway ramp, you usually try multiple paths before finding the one that meets the game rules and doesn’t collide with other roads, meaning you have to build, delete, and try again. In other games, deleted roads leave strange little hills and pits in the landscape. In New Cities, the terrain remembers its original shape. When you delete a road, it’s like it was never there.&lt;/p&gt;
+
+&lt;p&gt;I want players to trade off price, space and throughput when considering an interchange design. That will only happen if players can easily test different designs without paying for them or cluttering the space. Blueprints, Planner Mode, and Test Mode make this possible.&lt;/p&gt;
+
+&lt;p&gt;In Test Mode you can design and test interchanges – or any other road system – with an unlimited budget. With the Blueprints Tool, you can copy a perfected design from Test Mode into your city. Combined with Planner Mode, you can remove any colliding objects, account for terrain, connect to existing roads, and see the price, all before making the purchase.&lt;/p&gt;
+
+&lt;p&gt;Most cities will only feature a few interchanges, if any, but Blueprints are not a niche feature. The real value of the tool is neighborhood designs, which allow you to plop residential space for thousands of people very quickly. Blueprinting also accelerates the laying out of farmlands.&lt;/p&gt;
+
+&lt;figure class=&quot;video caption-top&quot;&gt;
+  &lt;video autoplay=&quot;&quot; loop=&quot;&quot; controls=&quot;&quot; poster=&quot;/blog/assets/images/neighborhood-copy.png&quot;&gt;
+    &lt;source src=&quot;/blog/assets/video/neighborhood-copy.mp4&quot; /&gt;
+    &lt;source src=&quot;/blog/assets/video/neighborhood-copy.webm&quot; /&gt;
+  &lt;/video&gt;
+  &lt;figcaption&gt;Living space for thousands - just plop it down!&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;You might have noticed that New Cities strips out a lot of traditional city-builder features. Currently, there is no power nor water, no fires nor natural disasters (and therefore no fire stations), and certainly no dead bodies or individually-simulated blobs of sewage. These aspects are omitted because I don’t find them interesting. Utilities add no interesting choices to the game – either your city has utilities, or it doesn’t work as a city. These aspects add developer time, slow down the player, and take up CPU cycles that I’d rather use to make the maximal cities larger. (Power is an exception, since coal vs nuclear vs green is an interesting choice, and so power could be included if crowdfunding contributors ask for it.)&lt;/p&gt;
+
+&lt;p&gt;New Cities aims to provide a different kind of game, one that is at the same time new and old-as-in-retro, eliminating things that don’t work or are less interesting, and replacing them with mechanics that are fun and new.&lt;/p&gt;
+
+&lt;p&gt;Join the &lt;a href=&quot;https://discord.gg/udgeB2E&quot;&gt;discord&lt;/a&gt;, &lt;a href=&quot;https://www.reddit.com/r/New_Cities&quot;&gt;subreddit&lt;/a&gt;, and &lt;a href=&quot;https://twitter.com/lone_pine_games&quot;&gt;twitter&lt;/a&gt;! We love to chat with fans about features and design decisions.&lt;/p&gt;</content><author><name>Lone Pine</name></author><summary type="html">This is why cloverleaf interchanges are bad #BanTheClover</summary></entry><entry><title type="html">New Cities Tribune #1</title><link href="http://localhost:4000/blog/2019/10/22/new-cities-tribune-1.html" rel="alternate" type="text/html" title="New Cities Tribune #1" /><published>2019-10-22T00:00:00-07:00</published><updated>2019-10-22T00:00:00-07:00</updated><id>http://localhost:4000/blog/2019/10/22/new-cities-tribune-1</id><content type="html" xml:base="http://localhost:4000/blog/2019/10/22/new-cities-tribune-1.html">&lt;p&gt;&lt;em&gt;This post was contributed by our new community manager, Mitch (supersoup).&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Hello, and welcome to the first edition of The New Cities Tribune: the periodical where we lay bare the development process, offer our thoughts on game design, and open the floor to you, our most invaluable and esteemed community.&lt;/p&gt;
 
@@ -28,7 +74,7 @@
 
 &lt;p&gt;As the late, great Bob Ross says about painting: “You have unlimited freedom on this canvas.” And I believe that’s true of certain games as well—you’re given a canvas, and the developer provides all the tools and colors you need to paint a beautiful picture. A portrait of life. And perhaps there’s no portrait so grand or &lt;a href=&quot;https://www.dictionaryofobscuresorrows.com/post/23536922667/sonder&quot;&gt;sonderous&lt;/a&gt; as the city, the hub of humanity since ages past. When we abandoned nomadic existence in favor of banding together into communities, cities soon followed, laying the foundation for both scientific endeavors and cultural growth. Humankind condensed like raindrops in a cloud into cities across the globe, each person adding color or vibrance to the glow of these beacons of civilization.&lt;/p&gt;
 
-&lt;figure class=&quot;video caption-top caption-below&quot;&gt;
+&lt;figure class=&quot;video caption-below&quot;&gt;
   &lt;video autoplay=&quot;&quot; loop=&quot;&quot; controls=&quot;&quot; poster=&quot;/blog/assets/images/sonder.png&quot;&gt;
     &lt;source src=&quot;https://github.com/LonePineGames/lonepinegames.github.io/releases/download/v0.3.1/sonder.mp4&quot; /&gt;
     &lt;source src=&quot;https://github.com/LonePineGames/lonepinegames.github.io/releases/download/v0.3.1/sonder.webm&quot; /&gt;
@@ -88,7 +134,7 @@
 
 &lt;p&gt;These improvements mean two things: for those with high-end computers, you’ll be able to play larger maps and bigger cities without any FPS drop. For those with lower-end or older computers, this might grant you the ability to play the game at all, with an FPS that’s acceptable. My dream is a game that can support region scale cities, and I will make that dream a reality – promise!&lt;/p&gt;
 
-&lt;p&gt;If you’re excited about the project, join the &lt;a href=&quot;https://discord.gg/udgeB2E&quot;&gt;discord&lt;/a&gt; or &lt;a href=&quot;https://www.reddit.com/r/New_Cities&quot;&gt;subreddit&lt;/a&gt;.&lt;/p&gt;</content><author><name>Lone Pine</name></author><summary type="html">This week I made several improvements to increase the performance and scale of the game.</summary></entry><entry><title type="html">New Cities Friday Facts #3: Roads to Prosperity</title><link href="http://localhost:4000/blog/2019/10/11/roads-to-prosperity.html" rel="alternate" type="text/html" title="New Cities Friday Facts #3: Roads to Prosperity" /><published>2019-10-11T00:00:00-07:00</published><updated>2019-10-11T00:00:00-07:00</updated><id>http://localhost:4000/blog/2019/10/11/roads-to-prosperity</id><content type="html" xml:base="http://localhost:4000/blog/2019/10/11/roads-to-prosperity.html">&lt;figure class=&quot;video caption-top &quot;&gt;
+&lt;p&gt;If you’re excited about the project, join the &lt;a href=&quot;https://discord.gg/udgeB2E&quot;&gt;discord&lt;/a&gt; or &lt;a href=&quot;https://www.reddit.com/r/New_Cities&quot;&gt;subreddit&lt;/a&gt;.&lt;/p&gt;</content><author><name>Lone Pine</name></author><summary type="html">This week I made several improvements to increase the performance and scale of the game.</summary></entry><entry><title type="html">New Cities Friday Facts #3: Roads to Prosperity</title><link href="http://localhost:4000/blog/2019/10/11/roads-to-prosperity.html" rel="alternate" type="text/html" title="New Cities Friday Facts #3: Roads to Prosperity" /><published>2019-10-11T00:00:00-07:00</published><updated>2019-10-11T00:00:00-07:00</updated><id>http://localhost:4000/blog/2019/10/11/roads-to-prosperity</id><content type="html" xml:base="http://localhost:4000/blog/2019/10/11/roads-to-prosperity.html">&lt;figure class=&quot;video caption-top&quot;&gt;
   &lt;video autoplay=&quot;&quot; loop=&quot;&quot; controls=&quot;&quot; poster=&quot;/blog/assets/images/interchange.png&quot;&gt;
     &lt;source src=&quot;https://github.com/LonePineGames/lonepinegames.github.io/releases/download/v0.3.0/interchange.mp4&quot; /&gt;
     &lt;source src=&quot;https://github.com/LonePineGames/lonepinegames.github.io/releases/download/v0.3.0/interchange.webm&quot; /&gt;
@@ -102,7 +148,7 @@
 
 &lt;p&gt;After the crowdfunding champaign, there will be a contributors-only vote to determine which new features to prioritize, and most of the candidate features will be related to transportation – so don’t worry, your inner train geek will be satisfied.&lt;/p&gt;
 
-&lt;figure class=&quot;video caption-top caption-below&quot;&gt;
+&lt;figure class=&quot;video caption-below&quot;&gt;
   &lt;video autoplay=&quot;&quot; loop=&quot;&quot; controls=&quot;&quot; poster=&quot;/blog/assets/images/planner.png&quot;&gt;
     &lt;source src=&quot;https://github.com/LonePineGames/lonepinegames.github.io/releases/download/v0.3.0/planner.mp4&quot; /&gt;
     &lt;source src=&quot;https://github.com/LonePineGames/lonepinegames.github.io/releases/download/v0.3.0/planner.webm&quot; /&gt;
@@ -126,7 +172,7 @@
 
 &lt;p&gt;But it gets even more complicated. The roads are split in order to conform to the elevation of terrain. Then there is Planner Mode, which allows you to plan roads before paying for them, and this means that splits must keep track of whether roads are completed or just planned.&lt;/p&gt;
 
-&lt;figure class=&quot;video caption-top &quot;&gt;
+&lt;figure class=&quot;video caption-top&quot;&gt;
   &lt;video autoplay=&quot;&quot; loop=&quot;&quot; controls=&quot;&quot; poster=&quot;/blog/assets/images/splits.png&quot;&gt;
     &lt;source src=&quot;https://github.com/LonePineGames/lonepinegames.github.io/releases/download/v0.3.0/splits.mp4&quot; /&gt;
     &lt;source src=&quot;https://github.com/LonePineGames/lonepinegames.github.io/releases/download/v0.3.0/splits.webm&quot; /&gt;
@@ -142,7 +188,7 @@
 
 &lt;p&gt;Secondly, it was possible to accidentally create duplicate, overlapping road segments (two roads connecting the same two intersections). This not only looked ugly but caused further glitches. Now when you overlap one road with another, it upgrades or modifies that section of road instead. In addition, building-by-overlap corrects the direction of one-way roads and expressways, meaning you can change the direction of a long stretch of one-way road using just two clicks – a really powerful tool.&lt;/p&gt;
 
-&lt;figure class=&quot;video caption-top &quot;&gt;
+&lt;figure class=&quot;video caption-top&quot;&gt;
   &lt;video autoplay=&quot;&quot; loop=&quot;&quot; controls=&quot;&quot; poster=&quot;/blog/assets/images/one-way-switch.png&quot;&gt;
     &lt;source src=&quot;https://github.com/LonePineGames/lonepinegames.github.io/releases/download/v0.3.0/one-way-switch.mp4&quot; /&gt;
     &lt;source src=&quot;https://github.com/LonePineGames/lonepinegames.github.io/releases/download/v0.3.0/one-way-switch.webm&quot; /&gt;
