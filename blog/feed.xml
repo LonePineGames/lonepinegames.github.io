@@ -1,4 +1,72 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2019-10-24T20:08:05-07:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">New Cities</title><subtitle>Build Prosperity.</subtitle><entry><title type="html">New Cities Friday Facts #5: Planning For Success</title><link href="http://localhost:4000/blog/2019/10/25/planning-for-success.html" rel="alternate" type="text/html" title="New Cities Friday Facts #5: Planning For Success" /><published>2019-10-25T00:00:00-07:00</published><updated>2019-10-25T00:00:00-07:00</updated><id>http://localhost:4000/blog/2019/10/25/planning-for-success</id><content type="html" xml:base="http://localhost:4000/blog/2019/10/25/planning-for-success.html">&lt;figure class=&quot;video caption-top&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2019-11-01T15:04:30-07:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">New Cities</title><subtitle>Build Prosperity.</subtitle><entry><title type="html">New Cities Friday Facts #6: Quality</title><link href="http://localhost:4000/blog/2019/11/01/quality.html" rel="alternate" type="text/html" title="New Cities Friday Facts #6: Quality" /><published>2019-11-01T00:00:00-07:00</published><updated>2019-11-01T00:00:00-07:00</updated><id>http://localhost:4000/blog/2019/11/01/quality</id><content type="html" xml:base="http://localhost:4000/blog/2019/11/01/quality.html">&lt;p&gt;A shorter post today. I didn’t implement any big features this week. (Okay, I implemented one big feature.) I did some bug fixing, including an issue that prevented players with older machines from launching the game. I added some information explaining the heatmaps better, including showing the effect of coasts and hills on land value from the start of the game. I also fixed the game balance, which was broken by the recent &lt;a href=&quot;https://lonepine.io/blog/2019/10/18/scale.html&quot;&gt;heatmaps change&lt;/a&gt;.&lt;/p&gt;
+
+&lt;figure class=&quot;image caption-bottom&quot;&gt;
+  &lt;!--&lt;a href=&quot;&quot;&gt;--&gt;
+  &lt;a href=&quot;/blog/assets/images/terrain-land-value.png&quot;&gt;
+    &lt;img src=&quot;/blog/assets/images/terrain-land-value.png&quot; alt=&quot;Land near water or on hills is more valuable.&quot; /&gt;
+    &lt;figcaption&gt;Land near water or on hills is more valuable.&lt;/figcaption&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;There are three key aspects of New Cities gameplay balance: money, economics, and heatmaps. Money includes loans, taxes, and costs; economics includes the conditions that cause citizens and businesses to enter or leave the city; and heatmaps—well, they’re a bit tricky to balance. I wanted Mitch to be able to play with the balance and give me feedback, so I moved the heatmap tuning constants into a Lua file.&lt;/p&gt;
+
+&lt;p&gt;Up until now, the game has been 100% C++ (and GLSL). Setting numerical constants in C++ code is inflexible. I was thinking of putting the constants in JSON or YAML, but someone on Discord mentioned modding, so I decided to check out Lua. It wasn’t hard to integrate the language, and by the time I had a system to load constants from Lua, I was already thinking about systems that would enable modding. Though we can assign no definitive dates, modding is now a planned feature.&lt;/p&gt;
+
+&lt;figure class=&quot;image caption-below&quot;&gt;
+  &lt;!--&lt;a href=&quot;&quot;&gt;--&gt;
+  &lt;a href=&quot;/blog/assets/images/lua-code.png&quot;&gt;
+    &lt;img src=&quot;/blog/assets/images/lua-code.png&quot; alt=&quot;A sample of the Lua code&quot; /&gt;
+    &lt;figcaption&gt;A sample of the Lua code&lt;/figcaption&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;There are many features that would benefit from being configured in Lua. Amenities (parks, schools, stadiums, hospitals) are unlocked with achievements, but there is no way currently to add a custom achievement or unlock a custom amenity. I’d like to move the achievements to Lua, and configuring amenities could live there too. A few game-balance related functions could possibly be exported to Lua, including computing the taxable value of a building, determining when a person should move out of the city (or move in), and determining when a business should close. I’m not sure if I want to move these things to Lua due to possible performance issues, but we’ll see.&lt;/p&gt;
+
+&lt;p&gt;Join the &lt;a href=&quot;https://discord.gg/udgeB2E&quot;&gt;discord&lt;/a&gt;, &lt;a href=&quot;https://www.reddit.com/r/New_Cities&quot;&gt;subreddit&lt;/a&gt;, and &lt;a href=&quot;https://twitter.com/lone_pine_games&quot;&gt;twitter&lt;/a&gt;! We love to chat with fans about features and design decisions.&lt;/p&gt;</content><author><name>Lone Pine</name></author><summary type="html">A shorter post today. I didn’t implement any big features this week. (Okay, I implemented one big feature.) I did some bug fixing, including an issue that prevented players with older machines from launching the game. I added some information explaining the heatmaps better, including showing the effect of coasts and hills on land value from the start of the game. I also fixed the game balance, which was broken by the recent heatmaps change.</summary></entry><entry><title type="html">New Cities Tribune #2: The Fellowship of New Cities</title><link href="http://localhost:4000/blog/2019/11/01/tribune-2-fellowship-of-new-cities.html" rel="alternate" type="text/html" title="New Cities Tribune #2: The Fellowship of New Cities" /><published>2019-11-01T00:00:00-07:00</published><updated>2019-11-01T00:00:00-07:00</updated><id>http://localhost:4000/blog/2019/11/01/tribune-2-fellowship-of-new-cities</id><content type="html" xml:base="http://localhost:4000/blog/2019/11/01/tribune-2-fellowship-of-new-cities.html">&lt;p&gt;You want to play the game, and we want you to play it. We’re still a good distance away from a public early access release, taking this time to polish up the game and make it as good as we possibly can, but that doesn’t mean you won’t get your chance to play it sooner rather than later. Here’s the story of how we got here, and where we’re going.&lt;/p&gt;
+
+&lt;p&gt;Developing a game is a journey. Like a Hobbit fresh out of the Shire, the twists and turns that lie in wait could scarcely be anticipated from the moment you set out on your quest. You have an idea of where you are and where you’re going, but there’s a wide world of wonder and worry that stands between developers and a release candidate. If you’re reading this blog, we consider you to be a part of the Fellowship, so let’s take a look at the path before us—both where we’ve been and where we’re going, together.&lt;/p&gt;
+
+&lt;p&gt;In June 2017, Lone Pine set out to make a regional traffic system simulator. He implemented the basic road building and “vehicle physics” systems, and then zoning and building spawning, followed by simulated citizens to populate the traffic network. Having built a basic city builder, or “city planner” as we call it, he named it New Cities, and by early 2019, was ready to engage fans with the nascent game.&lt;/p&gt;
+
+&lt;p&gt;New Cities was officially announced in April of 2019, with hopes that we would have an early access version prepped and ready to go by Summer. Obviously, that didn’t happen—we got a little sidetracked in Moria. But we learned a lot, and development continues at a steady pace up through the present day. Internal alpha builds are coming together, team members are testing, and new features like &lt;a href=&quot;https://lonepine.io/blog/2019/10/25/planning-for-success.html&quot;&gt;blueprints&lt;/a&gt; are being implemented on the regular.&lt;/p&gt;
+
+&lt;figure class=&quot;video caption-top&quot;&gt;
+  &lt;video autoplay=&quot;&quot; loop=&quot;&quot; controls=&quot;&quot; poster=&quot;/blog/assets/images/heatmap-dance.png&quot;&gt;
+    &lt;source src=&quot;https://github.com/LonePineGames/friday-facts/releases/download/0.6.0/heatmap-dance.mp4&quot; /&gt;
+    &lt;source src=&quot;https://github.com/LonePineGames/friday-facts/releases/download/0.6.0/heatmap-dance.webm&quot; /&gt;
+  &lt;/video&gt;
+  &lt;figcaption&gt;Watching a small town become educated.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Now that we’ve retraced our steps, let’s talk about the future.&lt;/p&gt;
+
+&lt;p&gt;We’ve been prepping an IndieGoGo campaign to reward you, the Fellowship, with unique opportunities for your support, and to gather a squad of heroic alpha testers. Plans are to launch the crowdfunding campaign by the end of this year (watch this space for updates) but we can offer you a sneak peak at what is to come right here in the New Cities Tribune! We’ve got a few tiers for you to choose from. Of course, the exact combination of tiers and rewards may change, but this is what we’ve got on the drawing board.&lt;/p&gt;
+
+&lt;p&gt;The “House” tier comes with the opportunity to put your name in the credits right beside the developers, as a special thanks for your support, along with access to an exclusive channel and role on our Discord. You’ll have the ear of the development team; use this newfound power wisely. And, random citizens of cities will be named after you! (With your permission of course.)&lt;/p&gt;
+
+&lt;p&gt;The next tier, Apartment Complex, gives you access to the Closed Alpha (for the first 100 contributors), a New Cities Game Key on final release, and the opportunity to vote in a New Feature poll to shape the next leg of our journey. But like any good mayor, perhaps you want to keep building onward and upward from there.&lt;/p&gt;
+
+&lt;p&gt;With the Factory tier, you become the proud owner of a New Cities T-Shirt, along with additional votes in New Feature polls to ensure your voice is heard. You’ll get a chance to shape the future of the game—we need your feedback to make it the best it can be! As a special thanks, schools, parks and roads will be named in your honor.&lt;/p&gt;
+
+&lt;p&gt;The Office Complex tier is more of a good thing. You’ll get a 3D-printed model of the skyscraper. Also, your voting power is upped to fifteen votes in the New Feature polls, so you can rest comfortably in the knowledge that the future of New Cities is being shaped by dapper and wise patrons such as yourself.&lt;/p&gt;
+
+&lt;p&gt;The final tier, Skyscraper, is for the true city builder fanatic. You’ll get an opportunity to have a 30 minute conversation with the developer to discuss features and gameplay and to suggest new content. In addition to all of the above, you get a massive one hundred votes in the New Feature polls, and top-tier naming in the credits.&lt;/p&gt;
+
+&lt;p&gt;Regardless of the tier you choose, your support is essential for indie developers like ourselves. We can’t thank you enough for your interest in New Cities, and should you choose to go above and beyond by supporting us during the IndieGoGo campaign, we truly consider you a part of our Fellowship. Thank you!&lt;/p&gt;
+
+&lt;p&gt;But what lies beyond, you wonder?&lt;/p&gt;
+
+&lt;p&gt;In January of 2020, those who backed an IndieGoGo tier which includes access to the Closed Alpha will be able to place their first roads down on the map as the Alpha goes live. You’ll have a few months to yourself to play, experiment, and offer your feedback on the game. You’ll vote in regular polls to decide which new features to implement first.&lt;/p&gt;
+
+&lt;p&gt;Toward the end of Spring 2020, we’ll push the game live into early access so that all who aspire to raise a city of concrete, asphalt, and steel from the humble soil can manifest their dreams into reality. Then we have a period of refinement—of polish, adding features, and tuning systems. By 2021, if all goes well, the first release candidate for New Cities will be ready, and version 1.0 will follow soon after.&lt;/p&gt;
+
+&lt;p&gt;Again, we can’t thank you enough for your support. Indie developers live and die by the passion and enthusiasm of their players, and we are blessed to be a part of the city builder community—easily one of the best in the gaming industry. We’re excited to launch our IndieGoGo, and to show off more New Cities in the coming months. Keep an eye on this space for updates, and as always…&lt;/p&gt;
+
+&lt;p&gt;Happy building!&lt;/p&gt;
+
+&lt;p&gt;Mitch&lt;/p&gt;
+
+&lt;p&gt;Join the &lt;a href=&quot;https://discord.gg/udgeB2E&quot;&gt;discord&lt;/a&gt;, &lt;a href=&quot;https://www.reddit.com/r/New_Cities&quot;&gt;subreddit&lt;/a&gt;, and &lt;a href=&quot;https://twitter.com/lone_pine_games&quot;&gt;twitter&lt;/a&gt;! We love to chat with fans about the future of the project.&lt;/p&gt;</content><author><name>supersoup</name></author><summary type="html">You want to play the game, and we want you to play it. We’re still a good distance away from a public early access release, taking this time to polish up the game and make it as good as we possibly can, but that doesn’t mean you won’t get your chance to play it sooner rather than later. Here’s the story of how we got here, and where we’re going.</summary></entry><entry><title type="html">New Cities Friday Facts #5: Planning For Success</title><link href="http://localhost:4000/blog/2019/10/25/planning-for-success.html" rel="alternate" type="text/html" title="New Cities Friday Facts #5: Planning For Success" /><published>2019-10-25T00:00:00-07:00</published><updated>2019-10-25T00:00:00-07:00</updated><id>http://localhost:4000/blog/2019/10/25/planning-for-success</id><content type="html" xml:base="http://localhost:4000/blog/2019/10/25/planning-for-success.html">&lt;figure class=&quot;video caption-top&quot;&gt;
   &lt;video autoplay=&quot;&quot; loop=&quot;&quot; controls=&quot;&quot; poster=&quot;/blog/assets/images/clovers-are-bad.png&quot;&gt;
     &lt;source src=&quot;https://github.com/LonePineGames/lonepinegames.github.io/releases/download/v0.5.0/clovers-are-bad.mp4&quot; /&gt;
     &lt;source src=&quot;https://github.com/LonePineGames/lonepinegames.github.io/releases/download/v0.5.0/clovers-are-bad.webm&quot; /&gt;
